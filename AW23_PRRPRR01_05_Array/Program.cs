@@ -7,18 +7,25 @@ using System.Threading.Tasks;
 namespace AW23_PRRPRR01_05_Array {
 	internal class Program {
 		static void Main(string[] args) {
-			Console.WriteLine("Hur gammal är du?");
+			//string user1Name = "Georg";
+			//string user2Name = "Lars";
+			//string user3Name = "Annette";
+			//string user4Name = "Berit";
 
-			string input = Console.ReadLine();
-			//int age = int.Parse(input);
+			string[] userNames = new string[4];
+			userNames[0] = "Georg";
+			userNames[1] = "Lars";
+			userNames[2] = "Annette";
+			userNames[3] = "Berit";
 
-			int age;
-			while (!int.TryParse(input, out age)) {
-				Console.WriteLine("Vänligen ange ett tal.");
-				input = Console.ReadLine();
+			//Console.WriteLine(userNames[0]);
+			//Console.WriteLine(userNames[1]);
+			//Console.WriteLine(userNames[2]);
+			//Console.WriteLine(userNames[3]);
+
+			for (int i = 0; i < userNames.Length; i++) {
+				Console.WriteLine(userNames[i]);
 			}
-
-			Console.WriteLine("Du är " + age + " år gammal");
 		}
 	}
 }
